@@ -116,7 +116,9 @@
 												<li> <a href="#rotate"><tt>.rotate</tt></a> </li>
 												<li> <a href="#rotatedeg"><tt>.rotateDeg</tt></a> </li>
 												<li> <a href="#rotateby"><tt>.rotateBy</tt></a> </li>
-												<li> <a href="#rotateby"><tt>.rotateByDeg</tt></a> </li>
+												<li> <a href="#rotatetodeg"><tt>.rotateToDeg</tt></a> </li>
+												<li> <a href="#rotatetoby"><tt>.rotateToBy</tt></a> </li>
+												<li> <a href="#rotatebydeg"><tt>.rotateByDeg</tt></a> </li>
 												<li> <a href="#randomizex"><tt>.randomizeX</tt></a> </li>
 												<li> <a href="#randomizey"><tt>.randomizeY</tt></a> </li>
 												<li> <a href="#randomize"><tt>.randomize</tt></a> </li>
@@ -949,7 +951,7 @@
 							</dl>
 
 							<h4><a name="rotatedeg"></a><tt>.rotateDeg(angle)</tt> <span class="label-chainable">chainable</span></h4>
-							<p>Same as <a href="#rotate">rotate</a> but uses degrees</p>
+							<p>Same as <a href="#rotate">rotate</a> but uses degrees.</p>
 							<dl class="method-docs">
 								<dt>Params</dt>
 								<dd>
@@ -969,6 +971,45 @@
 							<pre data-src="examples/rotate-1.js"></pre>
 						</div>
 					</div><!-- /rotate -->
+
+					<!-- rotateTo -->
+					<div class="row doc-row">
+						<div class="col-md-6 doc-text">
+							<h4><a name="rotateto"></a><tt>.rotateTo(angle)</tt> <span class="label-chainable">chainable</span></h4>
+							<p>Sets the angle of a vector, preserving only its magnitude.</p>
+							<dl class="method-docs">
+								<dt>Params</dt>
+								<dd>
+									<ul class="params">
+										<li><strong>Number</strong> <em>angle</em> Angle in radians</li>
+									</ul>
+								</dd>
+								<dt>Return</dt>
+								<dd>
+									<ul class="return">
+										<li><strong>Victor</strong> <tt>this</tt></li>
+									</ul>
+								</dd>
+							</dl>
+
+							<h4><a name="rotatetodeg"></a><tt>.rotateToDeg(angle)</tt> <span class="label-chainable">chainable</span></h4>
+							<p>Same as <a href="#rotateto">rotateTo</a> but uses degrees.</p>
+							<dl class="method-docs">
+								<dt>Params</dt>
+								<dd>
+									<ul class="params">
+										<li><strong>Number</strong> <em>angle</em> Angle in degrees</li>
+									</ul>
+								</dd>
+								<dt>Return</dt>
+								<dd>
+									<ul class="return">
+										<li><strong>Victor</strong> <tt>this</tt></li>
+									</ul>
+								</dd>
+							</dl>
+						</div>
+					</div><!-- /rotateTo -->
 
 					<!-- rotateBy -->
 					<div class="row doc-row">
